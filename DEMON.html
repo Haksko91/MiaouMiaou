@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styleee.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8" />
+    <title>MOUAHAHA</title>
+</head>
+<body>
+    <h1> ALORS COMME CA ON NE M'AIME PLUS </h1>
+    <div class="container">
+    <IMG SRC="angry-black.gif">
+        <a href="chat ransomware.html">
+            <button>NON PARDON !!!</button>
+          </a>
+    </div>
+          <img id="image" src="creep.jpg">
+
+          <script>
+        const image = document.getElementById('image');
+
+function afficherImage() {
+    // Position aléatoire dans la fenêtre
+    const x = Math.random() * (window.innerWidth - 100); // Largeur - largeur de l'image
+    const y = Math.random() * (window.innerHeight - 100); // Hauteur - hauteur de l'image
+
+    image.style.left = `${x}px`;
+    image.style.top = `${y}px`;
+    image.style.display = 'block'; // Affiche l'image
+
+    setTimeout(() => {
+        image.style.display = 'none'; // Cache l'image après 0.5 secondes
+    }, 500);
+
+    // Génère un délai aléatoire entre 1 et 4 secondes
+    const delay = Math.random() * (4000 - 1000) + 1000;
+    setTimeout(afficherImage, delay); // Rappelle la fonction
+}
+
+// Démarre l'affichage aléatoire
+afficherImage();
+        </script>
+</body>
+</html>

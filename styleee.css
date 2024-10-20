@@ -1,0 +1,54 @@
+html {
+    background-color: rosybrown;
+}
+
+h1 {
+    color: red;
+    text-align: center;
+    font-size: 550%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Aligne les enfants verticalement */
+    align-items: center; /* Centre les enfants horizontalement */
+    margin-top: 20px; /* Espace au-dessus du conteneur */
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Centre l'image */
+}
+
+body {
+    position: relative; /* Nécessaire pour positionner l'image */
+    overflow: hidden; /* Empêche le défilement si l'image sort de l'écran */
+}
+
+#image {
+    display: none; /* Cache l'image par défaut */
+    position: absolute; /* Pour positionner l'image à différents endroits */
+    width: 25%; /* Taille de l'image (ajuste selon tes besoins) */
+    height: auto; /* Maintient le ratio de l'image */
+    z-index: -1; /* Met l'image derrière tout le contenu */
+}
+
+button {
+    background-color: #007BFF; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte */
+    border: none; /* Supprime la bordure */
+    border-radius: 5px; /* Arrondit les coins */
+    padding: 10px 20px; /* Espacement intérieur */
+    font-size: 16px; /* Taille de la police */
+    cursor: pointer; /* Change le curseur au survol */
+    margin-top: 20px; /* Espace au-dessus du bouton */
+    transition: background-color 0.3s; /* Animation au survol */
+}
+
+button:hover {
+    background-color: #0056b3; /* Couleur au survol */
+}
+.small-image {
+    width: 15%; /* Ajuste la taille selon tes besoins */
+    height: auto; /* Maintient le ratio de l'image */
+}
